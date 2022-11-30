@@ -1,0 +1,10 @@
+# fonts
+
+- font-size : 16px
+- font-family : Poppins 300,500,700
+                Open-sans 300 500
+
+# color pallete
+
+- violet : #8f00ff
+- dark violet : #1e002a

@@ -1,0 +1,215 @@
+/*css for the Navigation panel, floating buttons*/
+#navigation{
+    position: sticky;
+    top: 0;
+    height: 0;
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width : 480px){
+    #navigation{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navigation .logo-ico{
+        width: 100%;
+        padding: 0 2rem;
+        height: 60px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+    }
+}
+.navigation .logo-ico #logo-desktop{
+    width: 150px;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.navigation .logo-ico #logo-mobile{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+@media (min-width : 480px){
+    .navigation .logo-ico #logo-mobile{
+        display: none;
+    }
+}
+@media (max-width : 480px){
+    .navigation .logo-ico #logo-desktop{
+        display: none;
+    }
+}
+.logo-ico .hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: EAEAEA;
+    color: #111111;
+    display: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+.hamburger i{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width : 480px){
+    .logo-ico .hamburger{
+        display: flex;
+    }
+}
+.navigation .navPanel{
+    width: 60%;
+    max-width: 900px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navPanel .pages{
+    width: 60%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navPanel .pages a{
+    display: block;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    transition: .5s;
+}
+.navPanel .pages a:hover{
+    color: #4188FF;
+    letter-spacing: 2px;
+}
+.navPanel #resume{
+    display: block;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border: 2px solid #4188FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4188FF;
+    transition: 0.5s;
+}
+.navigation .navPanel #resume:hover{
+    background-color: #4188FF;
+    color: #FFFFFF;
+}
+/*
+    Mobile navigation panel design
+    Absolute position 
+    z-index : 998
+*/
+.mobileNav{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #111111;
+    min-height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+.mobileNav .mobilePages{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobileNav .mobilePages a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .5s;
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid #666;
+}
+.mobileNav .mobilePages a:hover{
+    font-style: italic;
+}
+.mobileNav #resume{
+    display: block;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border: 2px solid #4188FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4188FF;
+    transition: 0.5s;
+}
+.mobileNav #resume:hover{
+    background-color: #4188FF;
+    color: #FFFFFF;
+}
+@media (min-width : 480px){
+    .mobileNav{
+        display: none;
+    }
+}
+
+.toTop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EAEAEA;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 85%;
+    left: 90%;
+    z-index: 997;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width : 480px){
+    .toTop{
+        left: 80%;
+    }
+}
+.toTop:hover{
+    background-color: #4188FF;
+}
+.toTop a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 1.2rem;
+}
