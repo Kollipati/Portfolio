@@ -576,6 +576,12 @@ header .mouse{
         margin-bottom: 2rem;
     }
 }
+.projects-cont .projecta{
+    background-image: url('../media/Campaign Launch Brainstorm Whiteboard in Yellow Blue Purple Trendy Style.png');
+}
+.projects-cont .projectb{
+    background-image: url('../media/cricdp.png');
+}
 .projects-cont .project0{
     background-image: url('../media/atliq.png');
 }
